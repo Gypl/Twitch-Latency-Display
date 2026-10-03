@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Options</title>
+		<link rel="stylesheet" href="options.css"/> 
+		<script src="default_options.js"></script>
+		<script src="options.js"></script>
+	</head>
+	<body>
+		<h2>Twitch Latency Display</h2>
+		<div id="container">
+			<div class="button_area">
+				<button class="ReduceBuffer_btn" data-locale="Fast_forward_video_buffer" disabled>Fast forward video buffer</button>
+				<span class="Fast_forward_description" data-locale="Fast_forward_description">This button is helpful when there is a lot of video lag.</span>
+			</div>
+			<div class="checkbox_area">
+				<img class="stats_css_help_img enabled" src="/img/stats_hide.png">
+				<img class="stats_css_help_img disabled" src="/img/stats_show.png">
+				<input type="checkbox" id="sw_show_small_video_stats_css" name="check_view_speedrate">
+				<label for="sw_show_small_video_stats_css" id="sw_show_small_video_stats_css_label" data-locale="Show_small_video_stats">Show small video stats</label>
+			</div>
+			<hr>
+			<div class="checkbox_area">
+				<img class="totallatency_image enabled" src="/img/total_hidebtn.png">
+				<img class="totallatency_image disabled" src="/img/total_showbtn.png">
+				<input type="checkbox" id="sw_show_FF_btn_in_chat_window" name="check_view_speedrate">
+				<label for="sw_show_FF_btn_in_chat_window" id="sw_show_FF_btn_in_chat_window_label" data-locale="Show_FF_button_in_chat_window">Show FF Stream buffer button in chat window</label>
+			</div>
+			<hr>
+			<div class="numberbox_area">
+				<div><span data-locale="Buffer_size_Network_Latency">Buffer size + Network Latency</span><br> =&gt; <span class="ice_color" data-locale="Latency_To_Broadcaster">Latency To Broadcaster</span></div>			
+				<div><span data-locale="Latency_To_Broadcaster_Encoding_latency">Latency To Broadcaster + Encoding latency</span><br> =&gt; <span class="ice_color">Total Latency</span></div>			
+				<div>
+					<span data-locale="Encoding_latency_Predicted_value">Encoding latency(Predicted value):</span><input id="encoding_latency" class="encodinglatency_num" type="number" step="0.1" min="0" max="10"><span class="ice_color">sec.</span>
+					<div class="gray_color small_font" data-locale="Encoding_latency_explained">When using 'Low Latency' mode on an optimized system, OBS latency can be as low as 1-2 seconds.</div>
+				</div>
+				<br>
+				<div>
+					<span data-locale="Auto_reload_latency">Auto Reload Latency:</span><input id="auto_reload_latency" class="encodinglatency_num" type="number" step="0.1" min="0.1" max="60" value="7.0"><span class="ice_color">sec.</span>
+					<div class="gray_color small_font" data-locale="Auto_reload_latency_explained">Plugin will automatically reload the player when latency exceeds this value.</div>
+				</div>
+			</div>
+			<hr>
+			<div data-locale="mouseover_help">If you hover the mouse in the upper left corner of the video,
+				You can view the full advanced video statistics.
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

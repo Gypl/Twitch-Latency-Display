@@ -1,0 +1,134 @@
+﻿:root{
+    --TwitchPurple_color: #9146FF;
+    --ice_color: #F0F0FF;
+    --gray_color: #BBB;
+    --black_color: #000;
+}
+
+BODY {
+    background-color: var(--black_color);
+    color: var(--TwitchPurple_color);
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 500px;
+    min-height: 200px;
+    padding: 0 10px 10px;
+}
+
+h2 {
+    color: var(--ice_color);
+    text-align: center;
+}
+
+img.stats_css_help_img {
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+img {
+    border: 1px solid var(--ice_color);
+    display: block;
+}
+
+hr {
+    border-color: var(--ice_color);
+    margin: 10px 0;
+    opacity: 0.1;
+}
+
+.ice_color{
+    color: var(--ice_color);
+}
+.gray_color{
+    color: var(--gray_color);
+}
+
+
+.small_font {
+    font-size: 13px;
+}
+
+.checkbox_area input[type="checkbox"] {
+    accent-color: var(--TwitchPurple_color);
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.checkbox_area label {
+    cursor: pointer;
+}
+
+
+
+.button_area{
+    float: right;
+    width: 222px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.numberbox_area {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Fast_forward_description{
+    color: gray;
+    padding: 0 6px;
+    display: block;
+    white-space: pre-line;
+}
+
+.ReduceBuffer_btn {
+    background-color: var(--TwitchPurple_color);
+    color: white;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    padding: 8px 10px;
+    line-height: 1;
+}
+
+.ReduceBuffer_btn:hover {
+    background-color: #772ce8;
+    transition: 0.1s;
+    cursor: pointer;
+    /* transform: scale(1.02); */
+}
+.ReduceBuffer_btn:not(:disabled):active {
+    transform: translate(1px, 1px);
+}
+
+.ReduceBuffer_btn:disabled {
+    background: #444;
+    color: #999;
+    filter: grayscale(1);
+    cursor: not-allowed;
+}
+
+[data-locale="mouseover_help"]{
+    color: gray;
+}
+
+
+
+
+img.stats_css_help_img.disabled:not(:has(~input[type="checkbox"]:checked)) {
+    display: none;
+}
+img.stats_css_help_img.enabled:has(~input[type="checkbox"]:checked) {
+    display: none;
+}
+img.totallatency_image.disabled:not(:has(~input[type="checkbox"]:checked)) {
+    display: none;
+}
+img.totallatency_image.enabled:has(~input[type="checkbox"]:checked) {
+    display: none;
+}
+
+
+.encodinglatency_num {
+    font-size: 20px;
+    width: 60px;
+    margin: 0 10px;
+}

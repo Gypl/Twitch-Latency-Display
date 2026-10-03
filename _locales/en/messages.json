@@ -1,0 +1,47 @@
+{
+   "Auto_reload_latency": {
+      "message": "Auto Reload Latency:"
+   },
+   "Auto_reload_latency_explained": {
+      "message": "Plugin will automatically reload the player when latency exceeds this value."
+   },
+   "Buffer_Size_Latency_To_Broadcaster": {
+      "message": "Buffer Size + Latency To Broadcaster"
+   },
+   "Buffer_size_Network_Latency": {
+      "message": "Buffer size + Network Latency"
+   },
+   "Encoding_latency_Predicted_value": {
+      "message": "Encoding latency(Predicted value):"
+   },
+   "Encoding_latency_explained": {
+      "message": "If a streamer uses 'Low Latency' mode on an optimized system, OBS latency can be as low as 1-2 seconds. (Default value: 1.5 sec)"
+   },
+   "Fast_forward_description": {
+      "message": "This button is useful when there is\n a lot of stream latency."
+   },
+   "Fast_forward_video_buffer": {
+      "message": "⏩ Fast forward stream buffer"
+   },
+   "Latency_To_Broadcaster": {
+      "message": "Latency To Broadcaster"
+   },
+   "Latency_To_Broadcaster_Encoding_latency": {
+      "message": "Latency To Broadcaster + Encoding latency"
+   },
+   "Show_FF_button_in_chat_window": {
+      "message": "Show FF Stream buffer button in chat window"
+   },
+   "Show_small_video_stats": {
+      "message": "Show small video stats"
+   },
+   "appDesc": {
+      "message": "For a quick chating, Displays the latency of the video in the chat input window."
+   },
+   "appName": {
+      "message": "Twitch Latency Display"
+   },
+   "mouseover_help": {
+      "message": "If you hover the mouse in the upper left corner of the video, You can view the full advanced video statistics."
+   }
+}

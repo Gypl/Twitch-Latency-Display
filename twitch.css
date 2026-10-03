@@ -1,0 +1,63 @@
+:root[show_FF_buffer_btn] .FF_buffer_btn {
+    color: var(--color-fill-button-icon, #efeff1);
+    border-radius: var(--border-radius-medium, 0.4rem);
+    width: var(--button-size-default, 3rem);
+    height: var(--button-size-default, 3rem);
+    display: flex;
+}
+.FF_buffer_btn > svg {
+    fill: currentcolor;
+    margin: auto;
+}
+.FF_buffer_btn:hover {
+    background-color: var(--color-background-button-text-hover, rgba(255, 255, 255, 0.2));
+}
+.FF_buffer_btn:active {
+    background-color: var(--color-background-button-text-active, rgba(255, 255, 255, 0.15));
+}
+
+:root:not([show_FF_buffer_btn]) .FF_buffer_btn {
+    display: none;
+}
+
+:root.twitch_latency_hide_menu :is(div[role="dialog"], [aria-labelledby="active-settings-menu-header"]) {pointer-events: none !important; opacity: 0 !important;}
+
+
+:root[hide_video_stats] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) > table {display: none !important;}
+:root[hide_video_stats] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) {opacity: 0 !important;}
+
+
+:root:not([hide_video_stats]) .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) > table {box-shadow: unset !important;}
+
+:root:not([hide_video_stats])[lang="en-US"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latency To Broadcaster"]):not([aria-label="Buffer Size"])),
+:root:not([hide_video_stats])[lang="en-GB"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latency To Broadcaster"]):not([aria-label="Buffer Size"])),
+:root:not([hide_video_stats])[lang="bg-BG"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Забавяне от излъчващия играч"]):not([aria-label="Размер на буфера"])),
+:root:not([hide_video_stats])[lang="cs-CZ"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Prodleva od vysílajícího k divákovi"]):not([aria-label="Velikost vyrovnávací paměti"])),
+:root:not([hide_video_stats])[lang="da-DK"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latenstid til indholdsudbyderen"]):not([aria-label="Buffer-størrelse"])),
+:root:not([hide_video_stats])[lang="de-DE"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latenz zum Broadcaster"]):not([aria-label="Puffergröße"])),
+:root:not([hide_video_stats])[lang="el-GR"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Καθυστέρηση στον broadcaster"]):not([aria-label="Μέγεθος buffer"])),
+:root:not([hide_video_stats])[lang="es-ES"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latencia con el streamer"]):not([aria-label="Tamaño de búfer"])),
+:root:not([hide_video_stats])[lang="es-MX"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latencia al streamer"]):not([aria-label="Tamaño de búfer"])),
+:root:not([hide_video_stats])[lang="fi-FI"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Viive lähettäjään"]):not([aria-label="Puskurin koko"])),
+:root:not([hide_video_stats])[lang="fr-FR"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latence diffuseur"]):not([aria-label="Mémoire tampon"])),
+:root:not([hide_video_stats])[lang="hu-HU"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Közvetítő és felhasználó közti késés"]):not([aria-label="Pufferméret"])),
+:root:not([hide_video_stats])[lang="it-IT"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latenza allo streamer"]):not([aria-label="Dimensioni del buffer"])),
+:root:not([hide_video_stats])[lang="ja-JP"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="配信遅延時間"]):not([aria-label="バッファサイズ"])),
+:root:not([hide_video_stats])[lang="ko-KR"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="브로드캐스터 지연 시간"]):not([aria-label="버퍼 크기"])),
+:root:not([hide_video_stats])[lang="nl-NL"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Vertraging naar streamer"]):not([aria-label="Buffergrootte"])),
+:root:not([hide_video_stats])[lang="no-NO"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Forsinkelse til strømmer"]):not([aria-label="Bufferstørrelse"])),
+:root:not([hide_video_stats])[lang="pl-PL"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Opóźnienie względem nadawcy"]):not([aria-label="Rozmiar buforu"])),
+:root:not([hide_video_stats])[lang="pt-PT"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latência na transmissão"]):not([aria-label="Tamanho do buffer"])),
+:root:not([hide_video_stats])[lang="pt-BR"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Latência para o streamer"]):not([aria-label="Tamanho do buffer"])),
+:root:not([hide_video_stats])[lang="ro-RO"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Decalaj față de emițător"]):not([aria-label="Timp de procesare"])),
+:root:not([hide_video_stats])[lang="ru-RU"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Задержка до владельца канала"]):not([aria-label="Размер буфера"])),
+:root:not([hide_video_stats])[lang="sk-SK"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Oneskorenie k vysielateľovi"]):not([aria-label="Veľkosť medzipamäte"])),
+:root:not([hide_video_stats])[lang="sv-SE"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Fördröjning till streamare"]):not([aria-label="Buffertstorlek"])),
+:root:not([hide_video_stats])[lang="th-TH"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="เวลาแฝงไปยังผู้ถ่ายทอดสด"]):not([aria-label="ขนาดบัฟเฟอร์"])),
+:root:not([hide_video_stats])[lang="tr-TR"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Yayıncı Gecikmesi"]):not([aria-label="Ara Bellek Boyutu"])),
+:root:not([hide_video_stats])[lang="vi-VN"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="Độ trễ so với người phát sóng"]):not([aria-label="Thời lượng trong bộ nhớ đệm"])),
+:root:not([hide_video_stats])[lang="zh-CN"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="直播者延迟"]):not([aria-label="缓冲区大小"])),
+:root:not([hide_video_stats])[lang="zh-TW"] .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :is(div, thead, p:not([aria-label="實況主延遲"]):not([aria-label="緩衝區大小"])) {display: none !important;}
+:root:not([hide_video_stats]) .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) :not(p) {padding: 0 !important;}
+:root:not([hide_video_stats]) .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) p {margin-right: -16px; padding: 2px 6px; filter: drop-shadow(0px 0px 2px #000) drop-shadow(0px 0px 0px #0009); font-weight: bold;}
+:root:not([hide_video_stats]) .video-player [data-a-target="player-overlay-video-stats"]:not(:hover) {transform: scale(0.8); transform-origin: 0 0; background: #0004 !important;}

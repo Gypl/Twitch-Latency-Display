@@ -1,0 +1,47 @@
+{
+   "Auto_reload_latency": {
+      "message": "자동 새로고침 지연 시간:"
+   },
+   "Auto_reload_latency_explained": {
+      "message": "지연 시간이 이 값을 초과하면 플러그인이 자동으로 플레이어를 새로고침(빨리감기)합니다."
+   },
+   "Buffer_Size_Latency_To_Broadcaster": {
+      "message": "버퍼 크기 + 브로드캐스터 지연 시간"
+   },
+   "Buffer_size_Network_Latency": {
+      "message": "버퍼 크기 + 네트워크 지연 시간"
+   },
+   "Encoding_latency_Predicted_value": {
+      "message": "인코딩 지연 시간(예상값):"
+   },
+   "Encoding_latency_explained": {
+      "message": "스트리머가 최적화된 시스템에서 '낮은 지연 시간' 모드를 사용하는 경우 OBS 지연 시간은 1~2초까지 낮아질 수 있습니다. (기본 권장값: 1.5초)"
+   },
+   "Fast_forward_description": {
+      "message": "이 버튼은 영상 지연시간이\n많을 때 유용합니다."
+   },
+   "Fast_forward_video_buffer": {
+      "message": "⏩ 스트림 버퍼 빨리감기"
+   },
+   "Latency_To_Broadcaster": {
+      "message": "브로드캐스터 지연 시간"
+   },
+   "Latency_To_Broadcaster_Encoding_latency": {
+      "message": "브로드캐스터 지연 시간 + 인코딩 지연 시간"
+   },
+   "Show_FF_button_in_chat_window": {
+      "message": "채팅창에 스트림 버퍼 빨리감기 버튼 표시"
+   },
+   "Show_small_video_stats": {
+      "message": "작은 동영상 통계 표시"
+   },
+   "appDesc": {
+      "message": "빠른 채팅을 위해, 채팅 입력창에 영상의 지연시간을 표시합니다."
+   },
+   "appName": {
+      "message": "Twitch Latency Display"
+   },
+   "mouseover_help": {
+      "message": "동영상의 왼쪽 상단에 마우스를 가져가면, 전체 고급 동영상 통계를 볼 수 있습니다."
+   }
+}

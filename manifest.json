@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_icon": "icon128.png",
+      "default_popup": "options.html",
+      "default_title": "Twitch Latency Display"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "/twitch.css" ],
+      "js": [ "/default_options.js", "/twitch_locales.js", "/script.js" ],
+      "matches": [ "*://www.twitch.tv/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "host_permissions": [ "*://*.twitch.tv/*" ],
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAs0hG9FZR+vTHYYeu3FKx0oCNH62SZ3R2BiI25GlBjHticmkoNl5SKmDLSPOThz45rcWbLJLsiVRmZMMv+tdXzip0v1gm3tvUkYmuk/hrSAr+FibrDLrM2AatAnL0QiNOD+I7zPDO3qEOXZXexbKcfO+P2Bs+d64xbNIJUPN6WdU9lcdOrXOjSng03k6lXD7vshFb9fNc1YxXSizp1cIAwnRQ4oNMgJsdSeP5ypMslDxBoyLA5ntx+2mfOGlSY4TTuqVJM3ltNTazOmAn+2uuwgG3NwGLiCjwA0cAIr2BBf8NbkOUVncJXY3xv+AUBxK636PRyWqfiuVDVSPAlMAisQIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "105",
+   "name": "__MSG_appName__",
+   "permissions": [ "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.1.3"
+}

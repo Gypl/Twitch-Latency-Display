@@ -1,0 +1,47 @@
+{
+   "Auto_reload_latency": {
+      "message": "Авто-перезагрузка (сек):"
+   },
+   "Auto_reload_latency_explained": {
+      "message": "Плагин автоматически перезагрузит плеер (перемотает), когда задержка превысит это значение."
+   },
+   "Buffer_Size_Latency_To_Broadcaster": {
+      "message": "Размер буфера + Задержка до стримера"
+   },
+   "Buffer_size_Network_Latency": {
+      "message": "Размер буфера + Сетевая задержка"
+   },
+   "Encoding_latency_Predicted_value": {
+      "message": "Задержка кодирования (Ожидаемая):"
+   },
+   "Encoding_latency_explained": {
+      "message": "Если стример использует режим «Низкая задержка» на оптимизированной системе, задержка OBS может составлять всего 1-2 секунды. (По умолчанию: 1.5 сек)"
+   },
+   "Fast_forward_description": {
+      "message": "Эта кнопка полезна при\n высокой задержке стрима."
+   },
+   "Fast_forward_video_buffer": {
+      "message": "⏩ Перемотать буфер стрима"
+   },
+   "Latency_To_Broadcaster": {
+      "message": "Задержка до стримера"
+   },
+   "Latency_To_Broadcaster_Encoding_latency": {
+      "message": "Задержка до стримера + Задержка кодирования"
+   },
+   "Show_FF_button_in_chat_window": {
+      "message": "Показывать кнопку перемотки буфера в окне чата"
+   },
+   "Show_small_video_stats": {
+      "message": "Показывать краткую статистику видео"
+   },
+   "appDesc": {
+      "message": "Для удобного общения отображает задержку видео прямо в окне ввода чата."
+   },
+   "appName": {
+      "message": "Twitch Latency Display"
+   },
+   "mouseover_help": {
+      "message": "Если навести курсор на левый верхний угол видео, можно увидеть полную расширенную статистику."
+   }
+}
